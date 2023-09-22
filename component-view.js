@@ -2,19 +2,34 @@ const client = ZoomMtgEmbedded.createClient()
 
 let meetingSDKElement = document.getElementById('meetingSDKElement')
 
-var authEndpoint = ''
-var sdkKey = ''
-var meetingNumber = '123456789'
-var passWord = ''
-var role = 0
-var userName = 'JavaScript'
+var authEndpoint = 'https://fathomless-badlands-78122-9ef418803988.herokuapp.com/'
+var sdkKey = '0NfU5ntyRJCqLaV_ol4pFA'
+var meetingNumber = '9630566849'
+var passWord = 'qpUK4b'
+var role = 1
+var userName = 'paolo'
 var userEmail = ''
 var registrantToken = ''
 var zakToken = ''
 
 client.init({
   zoomAppRoot: meetingSDKElement,
-  language: 'en-US',
+  language: 'it-IT',
+  customize: {
+    video: {
+      isResizable: true,
+      viewSizes: {
+        default: {
+          width: 1000,
+          height: 600
+        },
+        ribbon: {
+          width: 300,
+          height: 700
+        }
+      }
+    }
+  }
 })
 
 function getSignature() {
