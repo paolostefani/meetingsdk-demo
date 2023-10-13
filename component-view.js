@@ -2,15 +2,32 @@ const client = ZoomMtgEmbedded.createClient()
 
 let meetingSDKElement = document.getElementById('meetingSDKElement')
 
+const urlParams = new URLSearchParams(window.location.search);
+const meet = urlParams.get('meet');
+console.log('*** meet = ', meet);
+
+var meetingNumber = '9630566849';
+var passWord = 'qpUK4b';
+var userName = 'paolo';
+
+if (meet === "1") {
+  meetingNumber = '9630566849';
+  passWord = 'qpUK4b';
+  userName = 'paolo';
+} else if (meet === "2") {
+  meetingNumber = '8035893415';
+  passWord = '4Yc8Sm';
+  userName = 'piolo';
+}
+
+
 var authEndpoint = 'https://fathomless-badlands-78122-9ef418803988.herokuapp.com/'
 var sdkKey = '0NfU5ntyRJCqLaV_ol4pFA'
-var meetingNumber = '9630566849'
-var passWord = 'qpUK4b'
 var role = 1
-var userName = 'paolo'
 var userEmail = ''
 var registrantToken = ''
 var zakToken = ''
+var leaveUrl = 'https://servizionline.camcom.it/'
 
 client.init({
   zoomAppRoot: meetingSDKElement,
