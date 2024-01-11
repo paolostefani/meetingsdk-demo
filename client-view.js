@@ -12,16 +12,20 @@ console.log('*** meet = ', meet);
 
 var meetingNumber = '9630566849';
 var passWord = 'qpUK4b';
-var userName = 'paolo';
+var userName = 'Paolo';
 
 if (meet === "1") {
   meetingNumber = '9630566849';
   passWord = 'qpUK4b';
-  userName = 'paolo';
+  userName = 'Paolo';
 } else if (meet === "2") {
   meetingNumber = '8035893415';
   passWord = '4Yc8Sm';
-  userName = 'piolo';
+  userName = 'Stanza 2';
+} else if (meet === "3") {
+  meetingNumber = '9630566849';
+  passWord = 'qpUK4b';
+  userName = 'Gino';
 }
 
 var authEndpoint = 'https://fathomless-badlands-78122-9ef418803988.herokuapp.com/'
