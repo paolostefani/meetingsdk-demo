@@ -12,23 +12,28 @@ console.log('*** meet = ', meet);
 
 var meetingNumber = '9630566849';
 var passWord = 'qpUK4b';
-var userName = 'Paolo';
+var userName = 'Organizzatore - Stanza 1';
 var role = 1;
 
 if (meet === "1") {
   meetingNumber = '9630566849';
   passWord = 'qpUK4b';
-  userName = 'Paolo';
+  userName = 'Organizzatore - Stanza 1';
   role = 1;
 } else if (meet === "2") {
-  meetingNumber = '8035893415';
-  passWord = '4Yc8Sm';
-  userName = 'Stanza 2';
-  role = 0;
-} else if (meet === "3") {
   meetingNumber = '9630566849';
   passWord = 'qpUK4b';
-  userName = 'Gino';
+  userName = 'Partecipante - Stanza 1';
+  role = 0;
+} else if (meet === "3") {
+  meetingNumber = '8035893415';
+  passWord = '4Yc8Sm';
+  userName = 'Organizzatore - Stanza 2';
+  role = 1;
+} else if (meet === "4") {
+  meetingNumber = '8035893415';
+  passWord = '4Yc8Sm';
+  userName = 'Partecipante - Stanza 2';
   role = 0;
 }
 
