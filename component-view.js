@@ -9,25 +9,28 @@ console.log('*** meet = ', meet);
 var meetingNumber = '9630566849';
 var passWord = 'qpUK4b';
 var userName = 'Paolo';
+var role = 1
 
 if (meet === "1") {
   meetingNumber = '9630566849';
   passWord = 'qpUK4b';
   userName = 'Paolo';
+  role = 1;
 } else if (meet === "2") {
   meetingNumber = '8035893415';
   passWord = '4Yc8Sm';
   userName = 'Stanza 2';
+  role = 0;
 } else if (meet === "3") {
   meetingNumber = '9630566849';
   passWord = 'qpUK4b';
   userName = 'Gino';
+  role = 0;
 }
 
 
 var authEndpoint = 'https://fathomless-badlands-78122-9ef418803988.herokuapp.com/'
 var sdkKey = '0NfU5ntyRJCqLaV_ol4pFA'
-var role = Number(meet)
 var userEmail = ''
 var registrantToken = ''
 var zakToken = ''
