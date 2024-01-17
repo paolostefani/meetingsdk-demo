@@ -27,7 +27,7 @@ if (meet === "1") {
 
 var authEndpoint = 'https://fathomless-badlands-78122-9ef418803988.herokuapp.com/'
 var sdkKey = '0NfU5ntyRJCqLaV_ol4pFA'
-var role = 1
+var role = Number(meet)
 var userEmail = ''
 var registrantToken = ''
 var zakToken = ''
