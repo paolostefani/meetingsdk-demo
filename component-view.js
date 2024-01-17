@@ -9,7 +9,7 @@ console.log('*** meet = ', meet);
 var meetingNumber = '9630566849';
 var passWord = 'qpUK4b';
 var userName = 'Paolo';
-var role = 1
+var role = 1;
 
 if (meet === "1") {
   meetingNumber = '9630566849';
